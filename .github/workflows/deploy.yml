@@ -18,7 +18,7 @@ jobs:
         run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
       - name: Build Docker image
-        run: docker build -t YOUR_DOCKERHUB_USERNAME/frontend-repo-name .
+        run: docker build -t yafaorg/ai-assistant-ui .
 
       - name: Push Docker image
-        run: docker push YOUR_DOCKERHUB_USERNAME/frontend-repo-name
+        run: docker push yafaorg/ai-assistant-ui

@@ -16,5 +16,5 @@ RUN yarn build
 
 # Serve the static files (if using something like Nginx or Serve)
 RUN npm install -g serve
-EXPOSE 3000
+EXPOSE 8035
 CMD ["serve", "-s", "build"]
